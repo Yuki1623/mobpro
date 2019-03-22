@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>モブプロひろば</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="roomTtl">no name</h1>
+            <button id="stopRoom">
+                <i class="fas fa-times"></i>
+            </button>
+        </header>
+        <div class="flexBox">
+            <div class="leftBox">
+                <div class="pure-u-2-3 zindex" id="video-container">
+                    <div class="my-video">
+                        <video id="my-video" muted="true" autoplay playsinline></video>
+                    </div>
+                </div>
+
+                <div class="msgCont" id="msgCont">
+                    <div class="msgCont__inner">
+                        <div id="showMsg" class="showMsg"></div>
+                        <div class="msgCont__inputBox">
+                            <input id="inputMsg" type="text">
+                            <button id="sendMsg">送信</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="specificationCont" class="specificationCont">
+                    <button id="specification_00">デザイン１</button>
+                    <div class="specification__flexBox" id="specification__flexBox00">
+                        <div id="specification_00__cont" class="specification__imgCont">
+                            <img src="./img/design00.png" alt="デザイン１">
+                        </div>
+                        <p class="specification__link" id="specification__link">
+                            <a href="https://drive.google.com/open?id=1MR4Ua_8mhgQUzJpusmBU8PRSlVvjDqSM" target="_blank">素材データリンク</a>
+                        </p>
+                        <a class="back" id="backBtn00">
+                            <p>戻る</p>
+                        </a>
+                    </div>
+                    <button id="specification_01">デザイン２</button>
+                    <div class="specification__flexBox" id="specification__flexBox01">
+                        <div id="specification_01__cont" class="specification__imgCont">
+                            <img src="./img/design01.png" alt="デザイン１">
+                        </div>
+                        <p class="specification__link" id="specification__link">
+                            <a href="https://drive.google.com/open?id=1L35DZu5cBkL3d3nUFTWch8XBbOEo-DKG" target="_blank">素材データリンク</a>
+                        </p>
+                        <a class="back" id="backBtn01">
+                            <p>戻る</p>
+                        </a>
+                    </div>
+                    <button id="specification_02">デザイン３</button>
+                    <div class="specification__flexBox" id="specification__flexBox02">
+                        <div id="specification_02__cont" class="specification__imgCont">
+                            <img src="./img/design02.png" alt="デザイン１">
+                        </div>
+                        <p class="specification__link" id="specification__link">
+                            <a href="https://drive.google.com/open?id=1MR4Ua_8mhgQUzJpusmBU8PRSlVvjDqSM" target="_blank">素材データリンク</a>
+                        </p>
+                        <a class="back" id="backBtn02">
+                            <p>戻る</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightBox">
+                <div class="mainDisplay">
+                    <div id="their-videos">
+                        <div class="video" id="videoOther">
+                            <video class="otherVideo"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__flexBox">
+                    <button id="myFace">インカメモード</button>
+                    <button id="start-screen">画面共有</button>
+                    <button id="onemore">再接続</button>
+                    <button id="mainBtn">メイン</button>
+                    <button id="msgBtn">チャット</button>
+                    <button id="specificationBtn">仕様書</button>
+                </div>
+                <div class="time" id="timer" data-minutes-left="30">
+                </div>
+                <!-- <div class="timeInputBox" id="timeInputBox">
+                    <input class="timeInput" id="timeInput">分
+                    <button id="timeSend">時間決定</button>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="overFlow">
+            <div class="overFlow-flexBox">
+                <h1>モブプロひろば</h1>
+                <div class="overFlow-inputBox">
+                    <input id="roomName" type="text">
+                    <button id="access">roomアクセス</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="conectCont" id="conectCont">
+            <div class="conectCont__flexBox">
+                <p id="conectUser"></p>
+                <p> 相手からのコンタクトがありました。
+                </p>
+                <button id="goConect">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/skyway.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.simple.timer.js"></script>
+    <script src="./js/screenshare.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
