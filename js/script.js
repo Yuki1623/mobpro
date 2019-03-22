@@ -10,7 +10,7 @@ $(function () {
   const ss = ScreenShare.create({ debug: true });
 
   peer = new Peer({
-    key: 'daa40fc5-f08f-4640-9b52-2ffe765e7e96',
+    key: '19e275dd-4108-4d57-8322-b08008fbae64',
     debug: 3
   });
 
