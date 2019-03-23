@@ -11,15 +11,14 @@
   },
   "permissions": [
     "desktopCapture",
-    "tabs",
-    "*://tofurtc.firebaseapp.com/*"
+    "tabs"
   ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "content_scripts": [{
-    "matches": ["*://127.0.0.1/*"], 
+    "matches": ["https://snow39.me/*"], 
     "js": ["content.js"],
     "all_frames": true,
     "run_at": "document_end"
