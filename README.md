@@ -15,7 +15,7 @@ https://snow39.me/mobpro
 
 2 パッケージ化されていない拡張機能を読み込むをクリック。
 
-3 mobhiroの中のchrome-extensionを選択して下さい。
+3 ./chrome-extensionを選択して下さい。
 
 ## Usage
 最初の画面で部屋の名前を指定します。
